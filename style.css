@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+hmtl, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* overflow-x prevents scolling sideways into excess webpage. */
+
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.background {
+    height: 100svh;
+    width: 100svw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* makes all hyperlinks remove the blue underline font: */
+a {                             
+    text-decoration: none;
+    color: rgb(4, 79, 4);
+    font-family: "Catamaran", sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    font-optical-sizing: auto
+}
+
+.leaf {
+    background-image: url('./Images/leaf-backgrd.jpeg');
+}
+
+header {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    color: antiquewhite;
+    width: 90svw;
+}
+
+.h1caterfly {
+    position: sticky;
+    left: 2rem;
+    font-size: 200%;
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.motto {
+    position: absolute;
+    display: flex;
+    top: 7.5rem;
+    left: 4rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: 130%;
+}
+
+.nav-links {
+    position: sticky;
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 8rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+    opacity: 85%;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.contents-box {
+    background-color: antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    opacity: 85%;
+    height: 45rem;
+    width: 80rem;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10rem;
+    bottom:0px;
+    text-align:center;
+    z-index: 1;
+}
+/* ^'z-index' I found out from a Stack post, basically allows you to order layers. Lower the number, the further back the image will be.*/
+
+.firsttitle {
+    padding: 1rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+.toptxt {
+    padding: 1rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+.steps {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 30rem;
+    left: 26rem;
+    gap: 21rem;
+    z-index: 2;
+    font-family: "Catamaran", sans-serif;
+    color: rgb(4, 79, 4);
+    font-size: x-large;
+    z-index: 3;
+
+}
+
+.step1 > p:first-child {
+    background-color: antiquewhite;
+    padding: 5px;
+    border: solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step1 > p:last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: -13rem;
+    left: -6rem;
+    width: 15svw;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 3px solid rgb(4, 79, 4);
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step1 > p:first-child:hover {
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+.step1 > p:first-child:hover + p {
+    visibility: visible;
+}
+
+.step2 > p:first-child {
+    background-color: antiquewhite;
+    padding: 5px;
+    border: solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step2 > p:last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: -18rem;
+    left: 20rem;
+    height: 25svh;
+    width: 18svw;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 3px solid rgb(4, 79, 4);
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step2 > p:first-child:hover {
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+.step2 > p:first-child:hover + p {
+    visibility: visible;
+}
+
+.step3 > p:first-child {
+    background-color: antiquewhite;
+    padding: 5px;
+    border: solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step3 > p:last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: -14rem;
+    left: 48rem;
+    height: 18svh;
+    width: 18svw;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 3px solid rgb(4, 79, 4);
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step3 > p:first-child:hover {
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+.step3 > p:first-child:hover + p {
+    visibility: visible;
+}
+
+.emojis {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    width: 60svw;
+    border-radius: 20px 20px 20px 20px;
+    top: 35rem;
+    left: 22.5rem;
+    height: 8rem;
+    z-index: 2;
+}
+
+.luggage {
+    content: url("./Images/luggage.jpeg");
+    
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    margin-top: 2.5rem;
+    border-style: solid;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 60px solid rgb(4, 79, 4);
+    border-right: 0;
+    display: flex;
+    position: relative;
+    animation: myarrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myarrow {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 60px; top: 0px;}
+    100% {right: 100px; top: 0px;}
+}
+
+
+.caterpillar {
+    content: url("./Images/caterpillar.jpeg");
+}
+
+.caterpillerdelivered {
+    content: url("./Images/caterpillardelivered.png");
+}
+
+
+.stream {
+    background-image: url('./Images/stream-backgrd.jpeg');
+}
+
+.contents-box2 {
+    position: relative;
+    height: 50rem;
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5rem;
+    bottom: 0px;
+    text-align: center;
+    z-index: 1;
+}
+
+.contents-box2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    opacity: 0.85;
+    border-radius: 20px;
+    z-index: -1;
+}
+/* Now admittedly I got really stuck here as the ‘butterflysteps’ class kept taking on the opacity attribute of the ‘contents-box2’ class. 
+after spending too long trying to get the ‘butterflysteps’ class to ignore this opacity issue, I decided to quiz Claud.AI. 
+Here was it’s solution: 
+“Keeps the original contents-box2 class, but removes the background and opacity properties. 
+Adds a pseudo-element ::before to contents-box2 that creates the background with opacity. 
+The pseudo-element is positioned absolutely and covers the entire area of contents-box2. 
+The z-index: -1 on the pseudo-element ensures it stays behind the content. 
+The butterflysteps class remains unchanged and will not be affected by the opacity. 
+This approach creates a semi-transparent background for contents-box2 without affecting the opacity of its contents, 
+including the butterflysteps class.” 
+So I vaguely remember hearing about pseudo-elements so never really understood them. Well, now I have this example for the future to reference.*/
+.butterflysteps {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 30rem;
+    left: 8rem;
+    gap: 21rem;
+    z-index: 2;
+    font-family: "Catamaran", sans-serif;
+    color: rgb(4, 79, 4);
+    font-size: x-large;
+}
+
+.sectitle {
+    padding: 1rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+.toptxt2 {
+    padding: 3rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+
+.emojis2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    width: 60svw;
+    border-radius: 20px 20px 20px 20px;
+    top: 35rem;
+    left: 4rem;
+    height: 8rem;
+    z-index: 2;
+}
+
+.luggage2 {
+    content: url("./Images/luggage.jpeg");
+}
+
+.butterfly {
+    content: url("./Images/butterfly.jpeg");
+}
+
+.butterflydelivered {
+    content: url("./Images/butterflydelivered.png");
+}
+
+.step1a > p:first-child {
+    background-color: antiquewhite;
+    padding: 5px;
+    border: solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step1a > p:last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: -13rem;
+    left: -6rem;
+    width: 15svw;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 3px solid rgb(4, 79, 4);
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step1a > p:first-child:hover {
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+.step1a > p:first-child:hover + p {
+    visibility: visible;
+}
+
+.step2a > p:first-child {
+    background-color: antiquewhite;
+    padding: 5px;
+    border: solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step2a > p:last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: -18rem;
+    left: 20rem;
+    height: 25svh;
+    width: 18svw;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 3px solid rgb(4, 79, 4);
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step2a > p:first-child:hover {
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+.step2a > p:first-child:hover + p {
+    visibility: visible;
+}
+
+.step3a > p:first-child {
+    background-color: antiquewhite;
+    padding: 5px;
+    border: solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step3a > p:last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: -14rem;
+    left: 48rem;
+    height: 18svh;
+    width: 18svw;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 3px solid rgb(4, 79, 4);
+    border-radius: 20px 20px 20px 20px;
+    cursor: default;
+}
+
+.step3a > p:first-child:hover {
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+.step3a > p:first-child:hover + p {
+    visibility: visible;
+}
+
+
+.arrow2 {
+    width: 0;
+    height: 0;
+    margin-top: 2.5rem;
+    border-style: solid;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 60px solid rgb(4, 79, 4);
+    border-right: 0;
+    display: flex;
+    position: relative;
+    animation: myarrow2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myarrow2 {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 60px; top: 0px;}
+    100% {right: 100px; top: 0px;}
+}
+
+.shroom {
+    background-image: url('./Images/shroom-backgrd.jpeg');
+}
+
+.contents-box3 {
+    position: relative;
+    height: 50rem;
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5rem;
+    bottom: 0px;
+    text-align: center;
+    z-index: 1;
+}
+
+.contents-box3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    opacity: 0.85;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.review1 {
+    position: relative;
+    top: 17rem;
+    left: -22.5rem;
+    padding: 3rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+.customer1 {
+    content: url(./Images/unpacking.jpeg);
+    display: flex;
+    position: absolute;
+    height: 25svh;
+    width: 25svh;
+    top: 10rem;
+    left: 10rem;
+}
+
+.review2 {
+    position: relative;
+    top: 28rem;
+    left: 1rem;
+    padding: 3rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+.customer2 {
+    content: url(./Images/customer2.jpeg);
+    display: flex;
+    position: absolute;
+    height: 25svh;
+    width: 25svh;
+    top: 29rem;
+    left: 3rem;
+}
+
+.review3 {
+    position: relative;
+    top: 1.2rem;
+    left: 21rem;
+    padding: 3rem;
+    font-family: "Catamaran", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(4, 79, 4);
+}
+
+.customer3 {
+    content: url(./Images/customer3.jpeg);
+    display: flex;
+    position: absolute;
+    height: 25svh;
+    width: 25svh;
+    top: 10rem;
+    left: 53rem;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: "Catamaran", sans-serif;
+    padding: 30px;
+    display: flex;
+    color: #555;
+    width: 97svw;
+    background-color: rgb(4, 20, 4);
+    
+}
